@@ -1,4 +1,4 @@
-import React, { useEffect, useState,useContext } from 'react'
+import React, { useEffect, useState } from 'react'
 import BeatLoader from "react-spinners/BeatLoader";
 import axios from 'axios'
 
@@ -68,8 +68,8 @@ const Home = () => {
     return (
 
         <div className='mb-3'>
-            <Navbar />
 
+            <Navbar />
             <Card users={user} />
 
             {

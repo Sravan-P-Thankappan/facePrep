@@ -33,7 +33,6 @@ const Form = () => {
 
       e.preventDefault()
       if(userInput.userId===username&&userInput.pswd===password)
-
       {
         setLoggedIn(true)
         navigate('/home',{replace:true})
@@ -45,7 +44,8 @@ const Form = () => {
      })
 
     }
-     
+    
+
     useEffect(()=>{
         if(loggedIn) navigate('/home')
         else navigate('/')
